@@ -1,0 +1,22 @@
+
+
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>
+        <%= @message.content %>
+      </p>
+      <div class="post-time">
+        <%= @message.created_at %>
+      </div>
+      <div class="post-menus">
+        <%= link_to(" 編集", "/message/#{@message.id}/edit") %>
+        <%= link_to("削除 ", "/message/#{@message.id}/destroy",{method: "message"}) %>
+        </div>
+        
+        
+    </div>
+  </div>
+</div>
+
+<

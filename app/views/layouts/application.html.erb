@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SanaNote</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<body>
+  <header>
+      <div class="header-logo">
+        <a href="/">Sana Note ~Natori Sana 1st Anniversary~</a>
+      </div>
+        <ul class="header-menus">
+         
+          <li>
+            <%= link_to("Message","/message")%>
+          </li>
+          <li>
+            <%= link_to("Art","/art")%>
+          </li>
+          <li>
+            <%= link_to("Novel","/novel")%>
+          </li>
+          <li>
+            <%= link_to("NewPost","/new")%>
+          </li>
+          <li>
+          <%= link_to("???","/yami")%>
+        </li>
+      </ul>
+   </header>
+    <%= yield %>
+  </body>
+</html>
+

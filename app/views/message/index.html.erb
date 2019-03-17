@@ -1,0 +1,18 @@
+
+
+
+<div class="main posts-index">
+    <div class="flexbox">
+      <% @messages.each do |message| %>
+       <div class="box30">
+        <div class="box-title">名取コピペ</div>
+            <%= link_to(message.content, "message/#{message.id}") %>  
+        </div>
+      <% end %>
+  </div>
+</div>
+
+
+
+
+
